@@ -4,7 +4,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>zotfile@columbia.edu</em:id>
     <em:name>ZotFile</em:name>
-    <em:version>4.1.5.1-signed</em:version>
+    <em:version>4.1.5.1-signed-modified</em:version>
     <em:type>2</em:type>
 
     <!-- Target Application this extension can install into,
@@ -35,7 +35,7 @@
       <Description>
 	<em:locale>en-US</em:locale>
 	<em:name>ZotFile</em:name>
-          <em:description>Advanced PDF management for Zotero</em:description>
+          <em:description>Advanced PDF management for Zotero-Modified</em:description>
       </Description>
     </em:localized>
     <em:localized>

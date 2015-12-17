@@ -374,7 +374,7 @@ Zotero.ZotFile = {
             setTimeout(function() {
                 var progressWin = new Zotero.ZotFile.ProgressWindow(),
                     progressWin_showing = false;
-                progressWin.changeHeadline(zz.ZFgetString('general.newAttachmentRenamed'));
+                progressWin.changeHeadline(zz.ZFgetString('general.newAttachmentRenamed')); //leoatchina import to rename
                 // function to rename attachments
                 var on_confirm = function() {
                     var file_renamed = false;
@@ -402,6 +402,8 @@ Zotero.ZotFile = {
                                 file_renamed = true;
                             }
                         }
+                        //leoatchina: set parent ,ArchieveLocation when autorename   
+                        zz.setArchieveLocation(parent);
                         // user notification
                         if (file_renamed) {
                             // get object of attached file
@@ -475,6 +477,7 @@ Zotero.ZotFile = {
                         }
                         // just rename
                         if(auto_rename==4) on_confirm();
+
                     } catch (e) {
                         on_click = function() {
                             Zotero.ZotFile.copy2Clipboard(e);
@@ -2653,6 +2656,7 @@ Zotero.ZotFile = {
                     att.renameAttachmentFile(filename);
                     att.setField('title', filename);
                     att.save();
+                    Zotero.ZotFile.setArchieveLocation(item);
                     file = att.getFile();
                 }
             }
@@ -3054,10 +3058,8 @@ Zotero.ZotFile = {
     // ============================= //
     // FUNCTIONS: SET ARCHIEVELOCATION //
     // ============================ //
+
     setArchieveLocation:function(item){
-        if (!item) {
-          throw new Error('Item empty or erupted');
-        }
         if (item.isRegularItem()) { // not an attachment already
           var fulltext = new Array;
           var attachments = item.getAttachments(false);
@@ -3084,7 +3086,6 @@ Zotero.ZotFile = {
           skipDateModifiedUpdate: true
         });
     },
-
     // ============================= //
     // FUNCTIONS: RENAME ATTACHMENTS //
     // ============================ //
@@ -3345,11 +3346,12 @@ Zotero.ZotFile = {
                 Zotero.ZotFile.showWarningMessages(Zotero.ZotFile.ZFgetString('general.warning.skippedAtt'),Zotero.ZotFile.ZFgetString('general.warning.skippedAtt.msg'));
             }
             // get attachment item, parent and file
+            // this.atts  = Zotero.Items.get(attIDs);
             this.atts  = Zotero.Items.get(attIDs)
                 .filter(function(att) {
                     if(!att.isAttachment())
                         return false;
-                    return att.isAttachment() && att.getFile().exists() && att.attachmentMIMEType.indexOf('pdf') != -1;
+                    return  att.getFile().exists() && att.attachmentMIMEType.indexOf('pdf') != -1;
                 });
             if (this.atts.length==0)
                 return;            
@@ -3909,3 +3911,10 @@ Zotero.ZotFile = {
     }
 
 };
+
+function jsdump(str) {
+  Components.classes['@mozilla.org/consoleservice;1']
+            .getService(Components.interfaces.nsIConsoleService)
+            .logStringMessage(str);
+}
+
