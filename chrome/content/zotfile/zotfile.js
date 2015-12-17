@@ -3061,6 +3061,39 @@ Zotero.ZotFile = {
             this.pdfAnnotations.getAnnotations(attExtract);
     },
 
+    // ============================= //
+    // FUNCTIONS: SET ARCHIEVELOCATION //
+    // ============================ //
+    setArchieveLocation:function(item){
+        if (!item) {
+          throw new Error('Item empty or erupted');
+        }
+        if (item.isRegularItem()) { // not an attachment already
+          var fulltext = new Array;
+          var attachments = item.getAttachments(false);
+          var a,archiveLocation;
+          for (a in attachments) {
+              var a_item = Zotero.Items.get(attachments[a]);
+              if (a_item.attachmentMIMEType === 'application/pdf' && a_item.getFilename().length>0) {    //only pdf could be attached
+                // jsdump(a_item.getFilename());
+                archiveLocation=a_item.key+'/'+a_item.getFilename()+':PDF';
+                fulltext.push(archiveLocation);
+              }
+          }
+          for (a in attachments) {
+              var a_item = Zotero.Items.get(attachments[a]);
+              if (a_item.attachmentMIMEType === 'text/html'  && a_item.attachmentLinkMode!=Zotero.Attachments.LINK_MODE_LINKED_URL) {    
+                archiveLocation=a_item.key+'/'+a_item.getFilename()+':URL';
+                fulltext.push(archiveLocation);
+              }
+          }
+          archiveLocation=fulltext.join(";:").trim();
+          item.setField('archiveLocation',archiveLocation);
+        }
+        return item.save({
+          skipDateModifiedUpdate: true
+        });
+    },
 
     // ============================= //
     // FUNCTIONS: RENAME ATTACHMENTS //
@@ -3103,6 +3136,7 @@ Zotero.ZotFile = {
                 if(note!="") att.setNote(note);
                 if(tags) for each(var tag in tags) att.addTag(tag);
                 att.save();
+                Zotero.ZotFile.setArchieveLocation(item);
                 // restore selection
                 selection = this.arrayReplace(selection, attID, newAttID);
                 if(Zotero.version>="3") win.ZoteroPane.itemsView.selectItems(selection);
@@ -3130,6 +3164,7 @@ Zotero.ZotFile = {
             // change title of attachment item
             att.setField('title', filename);
             att.save();
+            Zotero.ZotFile.setArchieveLocation(item);
             // notification and return
             if (linkmode!=Zotero.Attachments.LINK_MODE_LINKED_FILE && notification)
                 this.messages_report.push(this.ZFgetString('renaming.imported', [filename]));
@@ -3158,6 +3193,7 @@ Zotero.ZotFile = {
             if(note!="") att.setNote(note);
             if(tags) for each(var tag in tags) att.addTag(tag);
             att.save();
+            Zotero.ZotFile.setArchieveLocation(item);
             // restore selection
             selection = this.arrayReplace(selection, attID, newAttID);
             if(Zotero.version>="3") win.ZoteroPane.itemsView.selectItems(selection);
