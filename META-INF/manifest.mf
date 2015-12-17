@@ -1,0 +1,456 @@
+Manifest-Version: 1.0
+
+Name: install.rdf
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: tjEXxo6HecyVNXhqsnrXBw==
+SHA1-Digest: UlgJe9STIxJx59FgnqMToEEvU7o=
+
+Name: chrome.manifest
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: hjrfcgeoBHDMUAfMVrr2bA==
+SHA1-Digest: yeVza3GNrZFJFShW6tm5m7B/+mk=
+
+Name: chrome/content/zotfile/include.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: GZlyvuwX3zoBWSxybPiBVA==
+SHA1-Digest: 3wf5Idh4kAWWElPIWQJE4wy63c8=
+
+Name: chrome/content/zotfile/openPDF-protocol-handler.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: MyS1LTfZ97R/AiV/VM198w==
+SHA1-Digest: 5MPXazhwMmAVHXjdv6AM0wteUPk=
+
+Name: chrome/content/zotfile/options-projects.xul
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: l5rx59mnXLU6E1HdG6f58w==
+SHA1-Digest: fdR40Glo+3ZrOJpeutzLCNs/Qu0=
+
+Name: chrome/content/zotfile/options.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ZmdoS9zPmO3sPkBOKBr0mw==
+SHA1-Digest: a1kLquaK93UX8pR/k9ic3ps8Ixk=
+
+Name: chrome/content/zotfile/options.xul
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: pvO5oDjBTkfbxgf5KHGwfg==
+SHA1-Digest: Q9llQ9NuBHn+yJHMhRCEB2v3sSc=
+
+Name: chrome/content/zotfile/optionsFolderEditor.xul
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 5QI0VaFywkuSzDcfdDglJA==
+SHA1-Digest: ct6lgAAJ/Q3QD2Lsj1+h8VLT/+M=
+
+Name: chrome/content/zotfile/overlay.xul
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: xg06GOm9stngebSutijTqQ==
+SHA1-Digest: Y4AS00Go4PT84TOCmQ/JEbBD6cU=
+
+Name: chrome/content/zotfile/ProgressWindow.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: dcUC1KmBAQTXGnfTsHYFLg==
+SHA1-Digest: oNNhCclZCeZ+4wzhjhVZqsheAKI=
+
+Name: chrome/content/zotfile/progressWindow.xul
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: wpDAok4ap/oRYPlgcpqnNw==
+SHA1-Digest: PS7k7vWQG7MieFd4MGazp2yvD6A=
+
+Name: chrome/content/zotfile/zotfile.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: XzAt+iMWg9B6Xv2eIFu+aQ==
+SHA1-Digest: 5DWBzl1trDcpi61DVi8R40/RWaA=
+
+Name: chrome/content/zotfile/pdfextract/extract.html
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 6yffaDS0xrdLNtsVzDD5hg==
+SHA1-Digest: eSOuqREXYK9Bai+GEfdptGzw7Pg=
+
+Name: chrome/content/zotfile/pdfextract/extract.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 4QXpAlzinVyKExvny5aigA==
+SHA1-Digest: jY6vQDuPdZ4pf8p/8uPiAoL9vj0=
+
+Name: chrome/content/zotfile/pdfextract/toc.html
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Lytpis9inJS5efK7i5XvuA==
+SHA1-Digest: 6+wyLGEMk5aYr0UeAMYYuYspGxY=
+
+Name: chrome/content/zotfile/pdfextract/toc.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: XZMMPdoDJ0s/AYkrx9YD+Q==
+SHA1-Digest: j6pFPw9e/1sAIT217HD2YPvmosE=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/LICENSE
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: /yU612dGLEa+KE2hLdoz6A==
+SHA1-Digest: BDGZUu17Dzs6cK5NXZ+VQxe4+XA=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/README.md
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 9l/KOibnvpfj8JS2yqxMJA==
+SHA1-Digest: A+l6ty4bKE7SQReFqJ/l4BUgY4k=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/doc_helper.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: huNUd5N6Hu+IYDFUAqONGQ==
+SHA1-Digest: ISb+z9A2lVgcL5bYKh+BwJD7/vM=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/getPDFAnnotations.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: IH6qOnym1cUPnjrSzNbF0A==
+SHA1-Digest: 5VYW6Wp8icNy8jeaOMLRG2pZd04=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/pdf.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: LX63FPc58d4jyENJWo0w0Q==
+SHA1-Digest: gd5URbSjJ7HAk4hUiGoh1lzuwUU=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/worker_loader.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: COKhcIG3nNby1BGgofi5jg==
+SHA1-Digest: Oh8HwTJWVq+rjasYc2vJv//jBlk=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/annotation.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: eZDXGEBxNG+luqetdnRTCw==
+SHA1-Digest: 8WAvcsgZSquIXgbtRIC0AGZrIbQ=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/arithmetic_decode
+ r.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: zuGO6nzX1mh/4rNwdrEYfg==
+SHA1-Digest: y8Ug57H8BhPmYp9NzsDMHM8aa8k=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/bidi.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ezqCNt2l1+e8vLrKzAFsNA==
+SHA1-Digest: bYzcDYloxTxm4XOyWLejw+xAoWs=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/charsets.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Dh+dzGPjInudZfM6qUb8aw==
+SHA1-Digest: TXk+Ph3wR/eFY6j+tR3zmpU2fFo=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/chunked_stream.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: BHW3X22HQ6z8y/Cxd8GSxw==
+SHA1-Digest: pge5a5dyAWplFy5ZVQpp6+Pc6LQ=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/cmap.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: kLAVxDGNu+V/H05JlDppEQ==
+SHA1-Digest: eBh13S7xNJoglXo4zoeP2hi0HDw=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/colorspace.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: dCiOnyC/8uhj9SlbVnKXRA==
+SHA1-Digest: V8XeqXguQmOF8Qk2IHTfdZfTBPA=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/core.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: m3EWHe7X9GUPYdPnOAFpOA==
+SHA1-Digest: Y94YcKb5c5/8rr4cPxhFlExydOo=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/crypto.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: GFTAsA96AoMKtlQ4tnOM7g==
+SHA1-Digest: JzgAlSqxIYGF2So80eo9R2Y4UEs=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/evaluator.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: UD5qoMoTU5IR+/PeApKTRQ==
+SHA1-Digest: duvN2FIzdTbgx2szZTzmr0p64Sk=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/font_renderer.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: eWPEL8+aLUk88gWVLh5DiQ==
+SHA1-Digest: oHx5jkoO/GueWXsZsXuims9VOLg=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/fonts.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: kEf6OCfvC4KhVychwYLYaw==
+SHA1-Digest: LF1DyWINmabJtmfaS7yFaTJqYgw=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/function.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: NdpDvoS8SHNJFE53OmGuAg==
+SHA1-Digest: 1QNE8qmQoB2o0iaoZL00FGp0Dds=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/glyphlist.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: fm9sFL9nRjtvf+KsY3kO3A==
+SHA1-Digest: Xsl2JYBhicX/GuqAEbRHb9QLu8A=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/image.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: mypvtyE/qOjS+AjlsDCAOA==
+SHA1-Digest: j03jrqr/hGtJfnXqlOTRDewRLcc=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/jbig2.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: vbk0oqH/RwzPPRL+fNCW9g==
+SHA1-Digest: coFuTlW2o1I/W/S6NFnYHBP0hpA=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/jpg.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: QDDOX2usPczdLaN+qoIClA==
+SHA1-Digest: W2eBezeu7cJHEN1wSxKeLa9kr9Y=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/jpx.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: SW1eVoKz/MF2Jm/DUnzMHQ==
+SHA1-Digest: Ojlr/vqD8HCKCXXurfnb+d+kgAI=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/metrics.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: BQGNJNf0nF8rOVilgS/sPw==
+SHA1-Digest: M3TfZArHCTCjDOagq67rkTRyZrE=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/murmurhash3.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: CgXgZ1DcwpGCYiPyH/CQHg==
+SHA1-Digest: VhewL/1LFUlnxoxhL2KlH7SCQR0=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/network.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Ik1neR/t1NluCPMPXanYZQ==
+SHA1-Digest: eonqRaie1mgQ6fdzBmpGpUJzA/4=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/obj.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ZRAX88wISAOlebo/Wll/yw==
+SHA1-Digest: 9+qYdTa0seYU95sifv1kaSWGnVQ=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/parser.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 7eWgInn1QZ4SH2YnL06FCA==
+SHA1-Digest: zgNK60FBAgEVtDSL/BpnzwfuSUU=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/pattern.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 8+BNIfrKcGzQusON0iEZ3Q==
+SHA1-Digest: UovngUBTUsy32dmVu0UkPkYXeMU=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/pdf_manager.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: haIGHtE85tN1nDCb290+ZA==
+SHA1-Digest: +0yZhHF+Xs0JH3dshNE8BhbzmdU=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/ps_parser.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: LBimEm8DWS2dLlhxZZ8gnA==
+SHA1-Digest: fqb7pRhUUcwmO+syII61yiOl3Ek=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/stream.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: dwBIH0rfAKHFUEsjHSD0GA==
+SHA1-Digest: IJgti6eHslATMW5O5ySrlPMCjN0=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/core/worker.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: H27iX5VpVX98ORX6Z8pgVA==
+SHA1-Digest: fFk3fvfzl5eG10SjR2POFKZ87jY=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/display/annotation_hel
+ per.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: gujWO99sJnLFNpURlM6SLg==
+SHA1-Digest: Hp0qjzCkxhTAQ6KpzOu2VudSv+o=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/display/api.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 2e+0avsiTUrKs4nZfRFW7w==
+SHA1-Digest: xTqRqmBN3Hc7pD2d1XflM8s4VM4=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/display/canvas.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: dP738IN5ZdAu//2qOOeJWg==
+SHA1-Digest: WW0j5lP17+Ej9+sBSeLFX703ums=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/display/font_loader.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: hML0fafLY4tRbME2myppTg==
+SHA1-Digest: hI53OIH2rUpVCm6VE99ZBxgOvuM=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/display/metadata.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ButtGU5slYrwZvBvbGj12Q==
+SHA1-Digest: tXQm1EqoZXwqaeMSsRaeDjwwT6Y=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/display/pattern_helper
+ .js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 9blLOu/05ZvXYPVo1FO6tQ==
+SHA1-Digest: x107/i9JaIhIJzvK97wtHeOYWxo=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/display/svg.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 0fUjqBqVTCJ/LXIR1PGiIw==
+SHA1-Digest: D08WVN2tNeKPR5vbMOT8NIeRcrg=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/display/webgl.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 2yVe9E/JbFyi0VBSLUvpIQ==
+SHA1-Digest: IqhqnJeAuzWwQqk10KtvDmxPqhU=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/images/logo.svg
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: l2pj7cTTLrn+Kh5PxoygJw==
+SHA1-Digest: QiwPBzFAM86EQcqWUW2PsAMC1aw=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/shared/cffStandardStri
+ ngs.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: yuy3mbaw9dKi7cLkknrmEw==
+SHA1-Digest: SatWQZXJPc9+LlX80jO2UPbslt4=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/shared/fonts_utils.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: HMs+2pKoyTJjFRyvKAXF6A==
+SHA1-Digest: DRUKiQSZEbSKF0BdaQADbyQ41Es=
+
+Name: chrome/content/zotfile/pdfextract/pdfjs/src/shared/util.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: /6VnrkZRU3gvp746Kz3Fdw==
+SHA1-Digest: QTuBwNMlfSGzdnqa5Dgqy5vuDsY=
+
+Name: chrome/locale/de-DE/options-projects.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: AVe1kb9nQqQnRuTkLzBozA==
+SHA1-Digest: UVwDuYLExmY1he3eFmtq1ErATsI=
+
+Name: chrome/locale/de-DE/options.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: wigjzjmNhW+e5chEgoRH6A==
+SHA1-Digest: +9hawXdO1LBTCGuZj02FIkzUfwk=
+
+Name: chrome/locale/de-DE/options.properties
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: z/MldXQFD39QsskwEA6UFQ==
+SHA1-Digest: B8h0dPdUt/4QlO20P7ZlBXKjd3A=
+
+Name: chrome/locale/de-DE/optionsFolderEditor.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 11KrpIxvsRYDJtdBeGMQdQ==
+SHA1-Digest: YD/FlhxvXnYxR/buI6pcz8LpHKo=
+
+Name: chrome/locale/de-DE/overlay.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: HugOvIFXpfzgXyFqQMacTg==
+SHA1-Digest: rNFc27me7THOaL2/l+qhGwdxoCQ=
+
+Name: chrome/locale/de-DE/zotfile.properties
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 42n52pfCTXzBNwtH4KZ5Zg==
+SHA1-Digest: PMJBWFu3Dv3Lwfpxl6CD3wuOrM0=
+
+Name: chrome/locale/en-US/options-projects.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Qwcoppt9gH8Rl9lLn1fWBw==
+SHA1-Digest: LvQPP0FaQIqxVZdLTKsJmbpn0GY=
+
+Name: chrome/locale/en-US/options.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: fNQKvVsohokfbHQU3+7IMA==
+SHA1-Digest: gcvB37w2hn3tWse4hFuhlf2Q3Kc=
+
+Name: chrome/locale/en-US/options.properties
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: H4cPlxWWPMDL68yCW2yxuw==
+SHA1-Digest: 3gA2iqF5sMzVqPJGCyXmnTXvk0c=
+
+Name: chrome/locale/en-US/optionsFolderEditor.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: L82I8ubOn2qjNVAguXTYng==
+SHA1-Digest: fFXZbQb1Dkui7wpO4XP+Wt/HUJI=
+
+Name: chrome/locale/en-US/overlay.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: t8E1DEgRnKUCOCq3oMoHSA==
+SHA1-Digest: QtdtJ1qvydGpAC/tyekTNdtViKc=
+
+Name: chrome/locale/en-US/zotfile.properties
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: yHSmJ8G/3m5ddNokngfcRw==
+SHA1-Digest: C09QA3DmuzlXIGFbiWeMNmKia50=
+
+Name: chrome/locale/fr-FR/options-projects.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: L0WWaVC0efkxuxT3LIjQUA==
+SHA1-Digest: VSrZEgie8CyAgNjVMoT8RA7i52w=
+
+Name: chrome/locale/fr-FR/options.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: ZfaX57KCp5THsBMt7cySfA==
+SHA1-Digest: IFTSJ7c+29QkEaGYfaRW+M2x2Ww=
+
+Name: chrome/locale/fr-FR/options.properties
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: EepTSQtEi+rSdScHJgw+5A==
+SHA1-Digest: 2EhFfOQrtX7mwsZ0LLSVTPauzEg=
+
+Name: chrome/locale/fr-FR/optionsFolderEditor.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: urcXJ7yN7Tl00DaS5r3kuw==
+SHA1-Digest: IFSzdRfCBc9T92SS3j2EekS0sXE=
+
+Name: chrome/locale/fr-FR/overlay.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: AQiRNHZ7PI+b5aNRiMDKBQ==
+SHA1-Digest: Po1b24f2mY+IhggIGoTrxGPmWA0=
+
+Name: chrome/locale/fr-FR/zotfile.properties
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: UKTQLLdiIy/InVN26Cca0A==
+SHA1-Digest: jKyCZr62lzy4eRfQwxi6URlijZM=
+
+Name: chrome/locale/it-IT/options-projects.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: RhowXzMpNxZryg171fy71w==
+SHA1-Digest: wBPEJ7gGC3nngHNmYsK1ttobTAg=
+
+Name: chrome/locale/it-IT/options.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: qRGzrTnWbqorw2G0tuc/OQ==
+SHA1-Digest: 4XrN4ZEsQv5O7ITs9n1FdXd0M5w=
+
+Name: chrome/locale/it-IT/options.properties
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: YCKna+IzArucEe9yH46fIQ==
+SHA1-Digest: 2DlSCuy3MFP1BFlO77jkJaJvXj8=
+
+Name: chrome/locale/it-IT/optionsFolderEditor.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: pCezyZJjI2iW9avXd1HRPw==
+SHA1-Digest: +r9z4GxV40SvYkLrNfg3iFoAf9o=
+
+Name: chrome/locale/it-IT/overlay.dtd
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: prNENv8dwkEwaSimerK1bg==
+SHA1-Digest: ne/Sz5iXnLam4yY9wLpTVC2XIIs=
+
+Name: chrome/locale/it-IT/zotfile.properties
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: /uk59UfAX3vus8uf5LqydQ==
+SHA1-Digest: 7rcOPPXyING/XAU4sbQViyRNgvw=
+
+Name: chrome/skin/default/zotfile/accept.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: i/7Uh1bxku16/m6qR5mq5A==
+SHA1-Digest: iHKt+GCjec9uq0+vNaZzAbODJcY=
+
+Name: chrome/skin/default/zotfile/exclamation.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 5N1R9GVm7TzqzckAvy/fAQ==
+SHA1-Digest: pGDMXOrKMOAzjqeExqCoPv3PyjE=
+
+Name: chrome/skin/default/zotfile/information.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: N1DHAdLsNaRdKJubnBoGZw==
+SHA1-Digest: BLSCNE110HMidXJ71zzOubBJ0nY=
+
+Name: defaults/preferences/defaults.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: vscfDFVayx94/qzUG9uLYw==
+SHA1-Digest: HOQhBGC2ABPB7wOmDHPbEIyQnjQ=
+

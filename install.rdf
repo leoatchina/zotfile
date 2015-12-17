@@ -1,11 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>zotfile@columbia.edu</em:id>
     <em:name>ZotFile</em:name>
-    <em:version>4.1.7</em:version>
+    <em:version>4.1.5.1-signed</em:version>
     <em:type>2</em:type>
 
     <!-- Target Application this extension can install into,
@@ -24,6 +23,14 @@
 			<em:maxVersion>4.*</em:maxVersion>
 		</Description>
 	</em:targetApplication>
+	<em:requires>
+	   <Description>
+	     <em:id>zotero@chnm.gmu.edu</em:id>
+	     <em:minVersion>1.*</em:minVersion>
+	     <em:maxVersion>4.*</em:maxVersion>
+	   </Description>
+	 </em:requires>
+    <!-- Front End MetaData -->
     <em:localized>
       <Description>
 	<em:locale>en-US</em:locale>
