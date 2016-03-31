@@ -1,1 +1,0 @@
-"../firefox/firefox.exe" -no-remote -P ffdebug
