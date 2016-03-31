@@ -2,8 +2,8 @@ Manifest-Version: 1.0
 
 Name: install.rdf
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: tjEXxo6HecyVNXhqsnrXBw==
-SHA1-Digest: UlgJe9STIxJx59FgnqMToEEvU7o=
+MD5-Digest: 6Y5xm3OjGm5NsTJ8797Yyg==
+SHA1-Digest: r57IvFzV/YV7p6KpV9w25NkEqCc=
 
 Name: chrome.manifest
 Digest-Algorithms: MD5 SHA1
@@ -17,8 +17,8 @@ SHA1-Digest: 3wf5Idh4kAWWElPIWQJE4wy63c8=
 
 Name: chrome/content/zotfile/openPDF-protocol-handler.js
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: MyS1LTfZ97R/AiV/VM198w==
-SHA1-Digest: 5MPXazhwMmAVHXjdv6AM0wteUPk=
+MD5-Digest: /j68a8erXIQSPIzwHL7maA==
+SHA1-Digest: aZLWhw3lC/vCc96zzUvhN/JgOxI=
 
 Name: chrome/content/zotfile/options-projects.xul
 Digest-Algorithms: MD5 SHA1
@@ -27,13 +27,13 @@ SHA1-Digest: fdR40Glo+3ZrOJpeutzLCNs/Qu0=
 
 Name: chrome/content/zotfile/options.js
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: ZmdoS9zPmO3sPkBOKBr0mw==
-SHA1-Digest: a1kLquaK93UX8pR/k9ic3ps8Ixk=
+MD5-Digest: vwsXUM22OvLk4sH5/qlr6Q==
+SHA1-Digest: eP6Mcsgdhsqaqn7+COVz8e2+qY0=
 
 Name: chrome/content/zotfile/options.xul
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: pvO5oDjBTkfbxgf5KHGwfg==
-SHA1-Digest: Q9llQ9NuBHn+yJHMhRCEB2v3sSc=
+MD5-Digest: wlBNbTrqEC/Uco59buH/6w==
+SHA1-Digest: cP8BxPxIpmzw0P4qeN2SW5tyT0w=
 
 Name: chrome/content/zotfile/optionsFolderEditor.xul
 Digest-Algorithms: MD5 SHA1
@@ -44,6 +44,11 @@ Name: chrome/content/zotfile/overlay.xul
 Digest-Algorithms: MD5 SHA1
 MD5-Digest: xg06GOm9stngebSutijTqQ==
 SHA1-Digest: Y4AS00Go4PT84TOCmQ/JEbBD6cU=
+
+Name: chrome/content/zotfile/pdfAnnotations.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: h6TwmnLfvXTIgbKxVOeEGA==
+SHA1-Digest: h3AWjdgPi+IP2AH3caj52h4nYbU=
 
 Name: chrome/content/zotfile/ProgressWindow.js
 Digest-Algorithms: MD5 SHA1
@@ -57,8 +62,8 @@ SHA1-Digest: PS7k7vWQG7MieFd4MGazp2yvD6A=
 
 Name: chrome/content/zotfile/zotfile.js
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: XzAt+iMWg9B6Xv2eIFu+aQ==
-SHA1-Digest: 5DWBzl1trDcpi61DVi8R40/RWaA=
+MD5-Digest: EnWf14HH3MTrTRIa9U6x2g==
+SHA1-Digest: iFXf5JchEwzXXbG6RIkFYfm8ggU=
 
 Name: chrome/content/zotfile/pdfextract/extract.html
 Digest-Algorithms: MD5 SHA1
@@ -264,8 +269,8 @@ SHA1-Digest: xTqRqmBN3Hc7pD2d1XflM8s4VM4=
 
 Name: chrome/content/zotfile/pdfextract/pdfjs/src/display/canvas.js
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: dP738IN5ZdAu//2qOOeJWg==
-SHA1-Digest: WW0j5lP17+Ej9+sBSeLFX703ums=
+MD5-Digest: JSh/54/RVHFk76z+NynauQ==
+SHA1-Digest: XrqaErpQwrs0zwpsXSeCoduXf8U=
 
 Name: chrome/content/zotfile/pdfextract/pdfjs/src/display/font_loader.js
 Digest-Algorithms: MD5 SHA1
@@ -451,6 +456,6 @@ SHA1-Digest: BLSCNE110HMidXJ71zzOubBJ0nY=
 
 Name: defaults/preferences/defaults.js
 Digest-Algorithms: MD5 SHA1
-MD5-Digest: vscfDFVayx94/qzUG9uLYw==
-SHA1-Digest: HOQhBGC2ABPB7wOmDHPbEIyQnjQ=
+MD5-Digest: fbI+c+/p++ZI1SUrnDkM5w==
+SHA1-Digest: 6hqVs/uapwXxUpAKJK8dilozqEo=
 

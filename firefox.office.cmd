@@ -1,1 +1,1 @@
-"E:\kuaipan\Firefox\firefox.exe" -no-remote -P ffdebug
+"D:\kuaipan\Firefox\firefox.exe" -no-remote -P ffdebug

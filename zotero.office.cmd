@@ -1,1 +1,1 @@
-"E:\kuaipan\zoteroStandAlone\zotero.exe" -no-remote -P zoterodebug -jsconsole
+"D:\kuaipan\zoteroStandAlone\zotero.exe" -no-remote -P zoterodebug -jsconsole

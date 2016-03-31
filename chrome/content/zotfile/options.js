@@ -19,7 +19,7 @@ function updatePreferenceWindow(which) {
     if(which=="all") {
         updatePDFToolsStatus();
         updateFolderIcon("all",false);
-        Zotero.ZotFile.temp=Zotero.ZotFile.prefs.getCharPref("tablet.dest_dir");
+        Zotero.ZotFile.temp = Zotero.ZotFile.prefs.getComplexValue("tablet.dest_dir", Components.interfaces.nsISupportsString).data;
         /*if(document.getElementById('pref-zotfile-tablet-mode').value==2) {
             document.getElementById('id-zotfile-tablet-storeCopyOfFile').disabled = true;
             document.getElementById('id-zotfile-tablet-storeCopyOfFile_suffix').disabled = true;
@@ -202,12 +202,12 @@ function updateFolderIcon(which,revert) {
             icon_ok.setAttribute('hidden', true);
             icon_error.setAttribute('hidden', false);
         }
-        if(which!="all") changedBasefolder(Zotero.ZotFile.prefs.getCharPref("tablet.dest_dir"),Zotero.ZotFile.prefs.getCharPref("tablet.dest_dir"));
+        if(which!="all") changedBasefolder(Zotero.ZotFile.prefs.getComplexValue("tablet.dest_dir", Components.interfaces.nsISupportsString).data);
     }
 }
 
 function checkFolderLocation(folder) {
-    var path=Zotero.ZotFile.prefs.getCharPref(folder);
+    var path=Zotero.ZotFile.prefs.getComplexValue(folder, Components.interfaces.nsISupportsString).data;
     if(path!="") if(Zotero.ZotFile.fileExists(path)) return(true);
     return(false);
 }
@@ -239,7 +239,7 @@ function previewFilename() {
 function changedBasefolder(dest_dir) {
     var baseFolderOld=Zotero.ZotFile.temp;
     var baseFolderOldValid=Zotero.ZotFile.fileExists(baseFolderOld);
-    var baseFolder=Zotero.ZotFile.prefs.getCharPref("tablet.dest_dir");
+    var baseFolder=Zotero.ZotFile.prefs.getComplexValue("tablet.dest_dir", Components.interfaces.nsISupportsString).data;
     var baseFolderValid=checkFolderLocation("tablet.dest_dir");
 
     // only proceed if folder has changed and the old location was valid
@@ -249,7 +249,10 @@ function changedBasefolder(dest_dir) {
         // change from valid to invalid subfolder
         if(!baseFolderValid) {
             if(!confirm(Zotero.ZotFile.ZFgetString('tablet.invalidFolder', [atts.length]))) {
-                Zotero.ZotFile.prefs.setCharPref("tablet.dest_dir",baseFolderOld);
+                var str = Components.classes["@mozilla.org/supports-string;1"]
+                    .createInstance(Components.interfaces.nsISupportsString);
+                str.data = baseFolderOld;
+                Zotero.ZotFile.prefs.setComplexValue("tablet.dest_dir", Components.interfaces.nsISupportsString, str);
                 updateFolderIcon("tablet",false);
             }
         }
@@ -257,26 +260,15 @@ function changedBasefolder(dest_dir) {
         if(baseFolderValid && atts.length>0) {
             // prompt user
             if(!confirm(Zotero.ZotFile.ZFgetString('tablet.baseFolderChanged.prompt', [atts.length]))) {
-                Zotero.ZotFile.prefs.setCharPref("tablet.dest_dir",baseFolderOld);
+                var str = Components.classes["@mozilla.org/supports-string;1"]
+                    .createInstance(Components.interfaces.nsISupportsString);
+                str.data = baseFolderOld;
+                Zotero.ZotFile.prefs.setComplexValue("tablet.dest_dir", Components.interfaces.nsISupportsString, str);
             }
-            
-/*          // promptUser function has changed! careful when uncomment
-            var userInput=Zotero.ZotFile.promptUser(Zotero.ZotFile.ZFgetString('tablet.baseFolderChanged.newPrompt', [atts.length]),Zotero.ZotFile.ZFgetString('tablet.baseFolderChanged.moveFiles'),Zotero.ZotFile.ZFgetString('tablet.baseFolderChanged.revert'),Zotero.ZotFile.ZFgetString('general.cancel'));
-
-            // Move to new location
-            if(userInput==0) {
-                Zotero.ZotFile.setTabletFolder(atts);
-                // remove folder
-                Zotero.ZotFile.removeFile(createFile(baseFolderOld));
-            }
-
-            // revert change
-            if(userInput==1) Zotero.ZotFile.prefs.setCharPref("tablet.dest_dir",baseFolderOld);
-            */
         }
     }
 
-    Zotero.ZotFile.temp=Zotero.ZotFile.prefs.getCharPref("tablet.dest_dir");
+    Zotero.ZotFile.temp=Zotero.ZotFile.prefs.getComplexValue("tablet.dest_dir", Components.interfaces.nsISupportsString).data;
 }
 
 
@@ -661,33 +653,25 @@ function getInstalledVersion () {
 }
 
 function downloadPDFTool() {
-    
-    var ioService = Components.classes["@mozilla.org/network/io-service;1"]
-                        .getService(Components.interfaces.nsIIOService);
-                        
-    var fileName=Zotero.ZotFile.pdfAnnotations.popplerExtractorFileName;
-
-    var url = Zotero.ZotFile.pdfAnnotations.popplerExtractorBaseURL + fileName+ ".zip";
-    var uri = ioService.newURI(url, null, null);
-
+    Components.utils.import("resource://gre/modules/Downloads.jsm");
+    // url
+    var fileName = Zotero.ZotFile.pdfAnnotations.popplerExtractorFileName;
+    var url = Zotero.ZotFile.pdfAnnotations.popplerExtractorBaseURL + fileName + ".zip";
+    // target
     var file = Zotero.getZoteroDirectory();
-    var zotero_dir=file.path;
-    file.append(fileName+ ".zip");
-    var fileURL = ioService.newFileURI(file);
-
-    const nsIWBP = Components.interfaces.nsIWebBrowserPersist;
-    var wbp = Components.classes["@mozilla.org/embedding/browser/nsWebBrowserPersist;1"].createInstance(nsIWBP);
-
-    var progressListener = new Zotero.WebProgressFinishListener(function () {
-
-        try {
+    var zotero_dir = file.path;
+    file.append(fileName + ".zip");
+    // create download object
+    var download = Downloads.createDownload({source: url, target: file});
+    // start download
+    download.then(function success(d) {
+        d.start().then(function success(p) {
             // extract zip file
             var proc = Components.classes["@mozilla.org/process/util;1"].
-                        createInstance(Components.interfaces.nsIProcess);
+                createInstance(Components.interfaces.nsIProcess);
             proc.init(Zotero.ZotFile.createFile("/usr/bin/unzip"));
             // define arguments
-            var args = ["-o","-q",file.path,"-d"  + zotero_dir + "/ExtractPDFAnnotations"];
-
+            var args = ["-o","-q", file.path, "-d"  + zotero_dir + "/ExtractPDFAnnotations"];
             // run process
             if (!Zotero.isFx36) {
                 proc.runw(true, args, args.length);
@@ -695,7 +679,6 @@ function downloadPDFTool() {
             else {
                 proc.run(true, args, args.length);
             }
-
             // Set permissions to 755
             var extractorFile=Zotero.ZotFile.createFile(Zotero.ZotFile.pdfAnnotations.popplerExtractorPath);
             if (Zotero.isMac) {
@@ -704,30 +687,17 @@ function downloadPDFTool() {
             else if (Zotero.isLinux) {
                 extractorFile.permissions = 493;
             }
-            
             // set ZotFile variable
             Zotero.ZotFile.pdfAnnotations.popplerExtractorTool=true;
-
             // enable poppler extractor option
             document.getElementById('id-zotfile-pdfExtraction-UsePDFJS-false').disabled=false;
-            
-        }
-        catch(e) {
-            Zotero.ZotFile.infoWindow(Zotero.ZotFile.ZFgetString('general.error'),Zotero.ZotFile.ZFgetString('extraction.unableToDwnldPoppler', [e.name, e.message]),8000);
-        }
-
-        // update settings
-        updatePDFToolsStatus();
-
-
-    });
-    
-    document.getElementById('pdf-annotations-extractor-update-button').disabled = true;
-    document.getElementById('pdf-annotations-extractor-update-button').setAttribute('label', Zotero.ZotFile.ZFgetString('extraction.dowwloadingPoppler'));
-    
-    wbp.progressListener = progressListener;
-    wbp.saveURI(uri, null, null, null, null, fileURL, null);
-            
+            // update settings
+            updatePDFToolsStatus();
+        }, function(e) {
+            // Zotero.ZotFile.infoWindow(Zotero.ZotFile.ZFgetString('general.error'), Zotero.ZotFile.ZFgetString('extraction.unableToDwnldPoppler', [e.name, e.message]),8000);
+            Zotero.ZotFile.infoWindow(Zotero.ZotFile.ZFgetString('general.error'), "Unable to download poppler.", 8000);
+        });
+    });     
 }
       
    

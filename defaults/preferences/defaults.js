@@ -38,7 +38,7 @@ pref("extensions.zotfile.version","");
 pref("extensions.zotfile.zotfile3update",false);
 pref("extensions.zotfile.info_window_duration_clickable",8000);
 pref("extensions.zotfile.info_window_duration",8000);
-pref("extensions.zotfile.wildcards.default",'{"a": "author", "A": {"field": "author", "operations":[{"function":"exec","regex": "\\\\w{1}"},{"function":"toUpperCase"}]}, "F": "authorLastF", "I": "authorInitials", "d": "editor", "D": {"field": "editor", "operations":[{"function":"exec","regex": "\\\\w{1}"},{"function":"toUpperCase"}]}, "L": "editorLastF", "l": "editorInitials", "t": "titleFormated", "h": "shortTitle", "j": "publicationTitle", "s": "journalAbbreviation", "p": "publisher", "w": {"default": "publisher", "audioRecording": "label", "bill": "legislativeBody", "case": "court", "computerProgram": "company", "film": "distributor", "journalArticle": "publicationTitle", "magazineArticle": "publicationTitle", "newspaperArticle": "publicationTitle", "patent": "issuingAuthority", "presentation": "meetingName", "radioBroadcast": "network", "report": "institution", "thesis": "university", "tvBroadcast": "network"}, "n": "patentNumber", "i": "assignee", "y": {"field": {"default": "date", "patent": "issueDate"}, "operations":[{"function":"exec","regex": "\\\\d{4}"}]}, "v": "volume", "e": "issue", "T": "itemType", "f": "pages", "x": "extra", "c": "collectionPaths"}');
+pref("extensions.zotfile.wildcards.default",'{"a": "author", "A": {"field": "author", "operations":[{"function":"exec","regex": "\\\\w{1}"},{"function":"toUpperCase"}]}, "F": "authorLastF", "I": "authorInitials", "d": "editor", "D": {"field": "editor", "operations":[{"function":"exec","regex": "\\\\w{1}"},{"function":"toUpperCase"}]}, "L": "editorLastF", "l": "editorInitials", "t": "titleFormated", "h": "shortTitle", "j": "publicationTitle", "s": "journalAbbreviation", "p": "publisher", "w": {"default": "publisher", "audioRecording": "label", "bill": "legislativeBody", "case": "court", "computerProgram": "company", "film": "distributor", "journalArticle": "publicationTitle", "magazineArticle": "publicationTitle", "newspaperArticle": "publicationTitle", "patent": "issuingAuthority", "presentation": "meetingName", "radioBroadcast": "network", "report": "institution", "thesis": "university", "tvBroadcast": "network"}, "n": "patentNumber", "i": "assignee", "y": {"field": {"default": "date", "patent": "issueDate"}, "operations":[{"function":"exec","regex": "\\\\d{4}"}]}, "v": "volume", "e": "issue", "T": "itemType", "f": "pages", "x": "extra", "c": "collectionPaths", "g": "authorLastG", "q":"lastAuthor", "Q":"lastAuthor_lastInitial", "u":"lastAuthor_lastf", "U":"lastAuthor_initials"}');
 pref("extensions.zotfile.wildcards.user",'{}');
 
 pref("extensions.zotfile.tablet", false);
@@ -116,6 +116,7 @@ pref("extensions.zotfile.pdfExtraction.debug", false);
 pref("extensions.zotfile.pdfExtraction.openPdfWin", "");
 pref("extensions.zotfile.pdfExtraction.openPdfLinux", "");
 pref("extensions.zotfile.pdfExtraction.openPdfMac_skim", false);
+pref("extensions.zotfile.pdfExtraction.openPdfMac", "Preview");
 pref("extensions.zotfile.pdfExtraction.UsePDFJSandPoppler", false);
 pref("extensions.zotfile.pdfExtraction.popplerDeleteTxtFile", true);
 pref("extensions.zotfile.pdfExtraction.Pull", true);
